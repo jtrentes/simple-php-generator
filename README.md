@@ -12,9 +12,9 @@ Class diagrams contained in an UML project are used for PHP code generation and 
 
 | UML | PHP  |
 | :-: |:-------:|
-| Package | namespace |
-| Class | class |
+| Package | Namespace |
+| Class | Class |
 | Interface | Interface |
-| Property | variable |
-| Operation | function |
-| Enumeration | class |
+| Property | Variable |
+| Operation | Function |
+| Enumeration | Abstract class with constants |
