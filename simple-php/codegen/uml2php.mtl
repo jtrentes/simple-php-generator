@@ -19,10 +19,13 @@
 /**
  * [c.name/]
  */
-class [c.name/]
+class [c.name/][if (not c.superclass->isEmpty())][for super | c.superclass separator(', ')][super.name/][/for][/if]
 {
-	// TODO	
-
+	[if not c.ownedAttribute->isEmpty()]
+		[for p | c.ownedAttribute]
+	protected $[p.name/];
+		[/for]
+	[/if]
 }
 [/file]
 [/template]
